@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"/>
+  
+	 <div class="header">
+	<h1>SafeCheck</h1>
+	</div> 	
+ 
+ 
+ 
+	<body>
+	
+	 <div id="popup-content">
+		<div class="container">
+		<button class="btn button1" title="This test would be suitable for small local independent shops or organizations,where you could be submiting details through their website">Basic Check</button> 
+		<button class="btn button1" title="This test is suitable for national sites and large online retailers" > Medium Check</button>  
+		<button class="btn button1" title="This test would be suitable for massive corporations such as amazon, large online banks or government department sites such as NHS "> Advanced Check</button>  <br></br>
+		<text> To Identify which test to use and to find out more information regarding this app please click here </text>
+		<p><a href="https://www.w3schools.com/">Readme</a></p>  	
+			
+			
+			
+	</div>
+	
+	<div id="popup-content">
+		<div class="container">
+		<br></br>
+		<button class="btn button2">Pass</button>
+		<button class="btn button3">Fail</button>
+		<head>Description of test outcome</head><br></br><br></br>
+		<button class="btn button2">Pass</button>
+		<button class="btn button3">Fail</button>
+		<head>Description of test outcome</head><br></br><br></br>		 
+		<button class="btn button2">Pass</button>
+		<button class="btn button3">Fail</button>
+		<head>Description of test outcome</head><br></br><br></br>
+		
+	</div>
+  
+  <script src="content-scripts/buttons.js"></script>
+  <script src="content-scripts/testSSL.js"></script>
+  <script src="content-scripts/Filereader.js"></script>
+  </body>
+
+</html>
+
+<!-- error handling 
+div id="error-content" class="hidden">
+<p>Can't run on this web page.</p><p>Try a different page.</p>-->
+
+

@@ -1,0 +1,54 @@
+{
+
+  "manifest_version": 2,
+  "name": "Securitylock",
+  "version": "1.0",	
+
+    "background": {
+	"scripts": [ ]
+	}, 
+	
+	"content_scripts": [
+	{
+	"matches": ["*://*.mozilla.org/*"],
+	"js": ["content-script.js", "Filereader.js", "test.js"]
+	}
+	],	
+  "description": "Secuirty safty application",
+  "homepage_url": "https://github.com/tomtrkd/securityplugin",
+  "icons": {
+    "48": "icons/Padlockicon.png"
+  },
+
+  "permissions": [
+    "activeTab",
+	"<all_urls>",
+	"downloads",
+    "nativeMessaging",
+    "notifications",
+    "storage",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "https://*/*"
+  ],
+
+  "browser_action": {
+    "default_icon": {
+	 "48": "icons/Padlockicon.png"
+	},
+    "default_title": "Securitylock",
+    "default_popup": "popup/Optionselect.html"
+  },
+
+  "web_accessible_resources": [
+    "Buttons/Button.jpg",
+    "Buttons/Buttontwo.jpg",
+    "Buttons/Buttonthree.jpg",
+	"http://127.0.0.1:5000/api/v1/test",
+	"http://127.0.0.1:5000/api/v2/test",
+	"http://127.0.0.1:5000/api/v3/test"
+	
+  ]
+
+}
